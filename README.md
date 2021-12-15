@@ -21,3 +21,5 @@ The process manager should spawn a script that reads the API, inserts it into DB
 ![](diagram.jpeg "Diagram")
 
 The advantage of this is limiting data flow over network which is expensive and can be a bottleneck. We're also getting rid of unnecessary storage which means less things to maintain. Less steps in the process means it's easier to understand and maintain.
+
+What is missing: functional and unit tests, I would use something like Behat to test this whole app with test DB and mocked APIs. 
